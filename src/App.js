@@ -10,9 +10,9 @@ function App() {
   useEffect(() => {
     fetchData();
 }, []);
-
+// 'http://localhost:8081/todos'
 const fetchData = () => {
-  fetch('http://localhost:8081/todos')
+  fetch('https://telling-ground-production.up.railway.app/todos')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));

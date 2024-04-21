@@ -39,8 +39,8 @@ function TodoList({ data }) {
     console.log(tasks);
 
     console.log("data below");
-
-    const url = 'http://localhost:8081/todospost';
+    
+    const url = 'https://telling-ground-production.up.railway.app/todospost';
     
 
     function addTask(text) {
@@ -80,8 +80,8 @@ function TodoList({ data }) {
         console.log("executed   " + value);
         setFromChild(value);
         setTasks(prevTasks => prevTasks.filter(t => t.id != value));
-
-        const urldel = `http://localhost:8081/todosdel/${value}`;
+        // `http://localhost:8081/todosdel/${value}`;
+        const urldel = `https://telling-ground-production.up.railway.app/todosdel/${value}`
 
 const options = {
     method: 'DELETE', // Specify the DELETE method
