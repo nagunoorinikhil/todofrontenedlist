@@ -1,0 +1,5 @@
+/* Assuming you're using Bootstrap */
+.parent-container {
+    display: flex;
+    flex-direction: row;
+}
